@@ -233,3 +233,6 @@ button { cursor: pointer; }
   .top { flex-direction: column; }
   .progress-box { text-align: left; }
 }
+
+/* Print the judge-sheet screenshots in landscape so the two-column layout is kept. */
+@page { size: letter landscape; }
