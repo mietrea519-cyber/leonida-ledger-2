@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: checklist, roadmap, missable flags and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Leonida Ledger</h1>
+    <p class="tagline">Every GTA 6 trophy on PS5 — a guide and a tracker that works offline.</p>
+  </div>
+  <div class="progress-box" id="progressBox" aria-live="polite">
+    <div class="big-count"><span id="earnedCount">0</span><span class="of"> / 55</span></div>
+    <div class="pct" id="pctLine">0% to platinum</div>
+    <div class="bar"><span id="barFill"></span></div>
+    <div class="grade-counts" id="gradeCounts"></div>
+  </div>
+</header>
+
+<nav class="views" aria-label="Views">
+  <button type="button" id="viewChecklist" class="view-btn active">Checklist</button>
+  <button type="button" id="viewRoadmap" class="view-btn">Roadmap to Platinum</button>
+  <span class="view-note" id="viewNote">55 trophies · 1 platinum · 2 gold · 6 silver · 46 bronze · 28 hidden</span>
+</nav>
+
+<section class="toolbar" aria-label="Filters and tools">
+  <label class="search-label">Search <input id="search" type="search" placeholder="Trophy or mission name…" autocomplete="off"></label>
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="chip active">All</button>
+    <button type="button" data-kind="story" class="chip">Story</button>
+    <button type="button" data-kind="missable" class="chip">Missable</button>
+    <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+    <button type="button" data-kind="activities" class="chip">Activities</button>
+    <button type="button" data-kind="online" class="chip">Online</button>
+  </div>
+  <label class="grade-label">Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="spoiler-toggle"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+  <div class="tools">
+    <button type="button" id="exportBtn">Export progress</button>
+    <label class="import-label">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button type="button" id="resetBtn">Reset</button>
+  </div>
+</section>
+
+<main class="layout">
+  <section class="list-col" id="listCol" aria-label="Trophy checklist">
+    <p class="showing" id="showingLine"></p>
+    <ul class="trophy-list" id="trophyList"></ul>
+    <p class="empty" id="emptyNote" hidden></p>
+  </section>
+  <aside class="guide-col" id="guideCol" aria-label="Trophy guide">
+    <div id="guidePanel"></div>
+  </aside>
+</main>
+
+<section class="roadmap" id="roadmapSection" hidden aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">Seven stages, built from the official descriptions: story first, then side strands, robberies, collectibles, activities, and the money and cleanup that close the list. One trophy is flagged possibly missable — Positive Mental Attitude, first offered in Chapter 1 — so start its spots early and keep manual saves.</p>
+  <div class="stages" id="stages"></div>
+</section>
+
+<footer class="foot">
+  <p>Official trophy names, descriptions and grades as published by PlayStation, as listed by PSNProfiles and cross-checked on Exophase (retrieved 2026-11-19). Every guide here is the Leonida Ledger's own words and names its sources. No Rockstar artwork or logo is used. The whole guide runs from its own files with the network off; progress is saved in this browser only.</p>
+  <p class="foot-note">Demo scenes for screenshots: add ?shot=cover, ?shot=roadmap, ?shot=tracker or ?shot=guide to the address.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
