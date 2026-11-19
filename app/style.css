@@ -236,3 +236,11 @@ button { cursor: pointer; }
 
 /* Print the judge-sheet screenshots at exactly 1280x720 with no margins, so the two-column layout is kept and each PDF page is the screenshot size. */
 @page { size: 1280px 720px; margin: 0; }
+
+/* Print: force the desktop two-column layout regardless of the print
+   layout width (the PDF tool lays the page out at <=900px, which would
+   otherwise trip the 900px screen breakpoint and collapse the layout). */
+@media print {
+  .layout { grid-template-columns: minmax(0, 1fr) 380px; }
+  .stages { grid-template-columns: 1fr 1fr; }
+}
