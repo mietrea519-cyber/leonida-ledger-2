@@ -2,7 +2,8 @@
 // shield and roadmap, then render. Progress saves to localStorage; demo scenes
 // from shots.js run in memory and never overwrite saved progress.
 import { loadSavedProgress, saveProgress, clearSavedProgress, exportProgressFile, parseProgressImport } from './store.js';
-import { renderChecklist, renderGuidePanel, renderRoadmap, GRADE_LABELS } from './render.js';
+import { renderChecklist, renderGuidePanel, GRADE_LABELS } from './render.js';
+import { renderRoadmap } from './roadmap.js';
 import { readShotScene, applyShotScene } from './shots.js';
 
 const state = {
