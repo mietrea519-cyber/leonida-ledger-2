@@ -234,5 +234,5 @@ button { cursor: pointer; }
   .progress-box { text-align: left; }
 }
 
-/* Print the judge-sheet screenshots in landscape so the two-column layout is kept. */
-@page { size: letter landscape; }
+/* Print the judge-sheet screenshots at exactly 1280x720 with no margins, so the two-column layout is kept and each PDF page is the screenshot size. */
+@page { size: 1280px 720px; margin: 0; }
